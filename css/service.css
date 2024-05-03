@@ -1,0 +1,244 @@
+body,html {
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.main-color {
+    color: #86b81a;
+}
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* padding: 20px 0; */
+    background-color: transparent;
+}
+
+nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #86b81a;
+    border-bottom: 2px solid #86b81a;
+}
+
+.navbar .btn {
+    background-color: #86b81a;
+    color: white;
+}
+
+.navbar-toggler i {
+     color:gray;
+     font-size:30px;
+}
+/* Start Landing */
+.Landing {
+    background-image: url(../images/bg-hero.jpg);
+    height: 530px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.Landing .text {
+    z-index: 1;
+}
+
+.Landing h1 {
+    font-size: 50px;
+    letter-spacing: 1.4px;
+    font-weight: 900;
+    text-shadow: 0px 2px white;
+     
+}
+
+.Landing::before {
+    content: '';
+    position: absolute;
+    background-color: #000000ab;
+    height: 100%;
+    width: 100%;
+}
+#about-header{
+    display: none;
+}
+
+/* End Landing */
+/* Start Our Serivces */
+.Serivces .head{
+   display: none;
+}
+.Serivces .head h2{
+   font-weight: 900;
+font-size: 40px;
+color: #2c3e50;
+}
+.Serivces .head h5{
+    letter-spacing: -1px;
+    font-weight: 900;
+    background-color: white;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+ }
+    .Serivces .head h5::after {
+        position: absolute;
+        content: '';
+        width: 250px;
+        top: 17px;
+        left: -65px;
+        z-index: -1;
+        height: 2px;
+        background: #86b81a;
+    }
+ 
+    .Serivces .head h5::before {
+        position: absolute;
+        content: '';
+        width: 220px;
+        top: 8px;
+        left: -50px;
+        z-index: -1;
+        height: 2px;
+        background: #86b81a;
+   } 
+  
+
+
+   .Serivces .col-12 > div{
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);;
+   transition: 0.3s;  
+    
+ }
+ 
+.Serivces  .col-12 i{
+    color: #86b81a ;
+}
+.Serivces .row  .col-12 > div:hover{
+    background-color: #86b81a ;
+     color:#eee !important;  
+  }
+  .Serivces .col-12 > div:hover p ,.Serivces .col-12 > div:hover i{
+      color:#eee !important;  
+  }
+  .service1 ,.service2,.service3 , .service4{
+    display: none;
+  }
+ 
+/* End Our Serivces */
+/* arrow_up */
+.arrow_up,
+.arrow_up:visited,
+.arrow_up:hover {
+    right: 20px;
+    background-color: #86b81a;
+    bottom: 20px;
+    color: white;
+    position: fixed;
+    display: none;
+}
+
+/* arrow_up */
+/*** Footer ***/
+button.btn1 {
+    border: none;
+
+    background-color: #86b81a !important;
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-weight: normal;
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}

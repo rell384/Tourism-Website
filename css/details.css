@@ -1,0 +1,222 @@
+    :root {
+    --primary: #86B817;
+    --secondary: #FE8800;
+    --light: #F5F5F5;
+    --dark: #14141F;
+}
+/*start navbar*/
+.menna{
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)),url(../images/photo-1507525428034-b723cf961d3e.avif);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+body,
+html {
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+ }
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* padding: 20px 0; */
+    background-color: transparent;
+}
+
+nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #86b81a;
+    border-bottom: 2px solid #86b81a;
+}
+
+.navbar .btn {
+    background-color: #86b81a;
+    color: white;
+}
+
+.navbar-toggler i {
+     color:gray;
+     font-size:30px;
+}
+.landding h1{
+    font-family: "Nunito",sans-serif;
+    font-weight: 800;
+    font-size: 60px !important;
+    color: var(--light);
+    margin-top: 150px !important;
+    margin-left: 200px;
+}
+.landding h1 span{
+    font-size: 16px;
+    margin-right: 50px;
+}
+@keyframes slideInDown {
+    0%   {transform: translate3d(0,-100%,0);visibility: visible;}
+    100% {transform: translateZ(0);}
+}
+.slideInDown {
+    animation-name: slideInDown;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+/*end navbar*/
+/*details*/
+.btn-groups button{
+    background-color: var(--primary);
+    color: var(--light);
+}
+.des-rating i{
+color: var(--secondary);
+margin-bottom: 20px;
+}
+.des_price{
+    font-size: 20px;
+    color: var(--dark);
+}
+.des h3{
+    font-size: 60px;
+}
+.des{
+    margin-top: 90px;
+    padding-left: 30px;
+    text-align:  center left;
+}
+/***********************************/
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .landding h1 {
+        font-size: 80px !important;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 767px) {
+    .landding h1 {
+        font-size: 60px !important;
+        margin-top: 100px !important;
+        margin-left: 0px;
+    }
+
+    .SectionTitle::before,
+    .SectionTitle::after {
+        width: 100%;
+        left: 0;
+    }
+}
+@media (max-width: 575px) {
+    .landding h1 {
+        font-size: 40px !important;
+        margin-top: 80px !important;
+        margin-left: 0px;
+    }
+}
+/*End Responsive Styles */
+/*** Footer ***/
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-weight: normal;
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+.FooterBTN{
+    background-color: var(--primary);
+    color: var(--light);
+}
+.FooterBTN:hover{
+    background-color: var(--primary) !important;
+    color: var(--light) !important;
+}
+
